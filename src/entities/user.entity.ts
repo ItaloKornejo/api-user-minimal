@@ -1,24 +1,24 @@
 import { BaseEntity, Column, CreateDateColumn, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity('USERS')
+@Entity('users')
 export class User extends BaseEntity {
 
-  @PrimaryGeneratedColumn({ name: 'USER_ID' })
+  @PrimaryGeneratedColumn({ name: 'user_id' })
   id!: number;
 
-  @Column({ name: 'USER_EMAIL' })
+  @Column({ name: 'user_email' })
   email!: string;
 
-  @Column({ name: 'USER_PASSWORD' })
+  @Column({ name: 'user_password' })
   password!: string;
 
-  @Column({ name: 'USER_FIRSTNAME' })
+  @Column({ name: 'user_firstname' })
   firstname!: string;
 
-  @Column({ name: 'USER_LASTNAME' })
+  @Column({ name: 'user_lastname' })
   lastname!: string;
 
-  @Column({ name: 'USER_BIRTHDAY' })
+  @Column({ name: 'user_birthday' })
   birthday!: Date;
 
 }
